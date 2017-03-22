@@ -14,11 +14,16 @@ require_relative 'lib/word_reader'
 
 VERSION = 'Игра "Виселица", версия 5.1'
 
-word_reader = WordReader.new
+word_reader     = WordReader.new
 words_file_name = "#{File.dirname(__FILE__)}/data/words.txt"
-word = word_reader.read_from_file(words_file_name)
 
-game = Game.new(word)
+if word_reader.read_from_args.nil?
+  word = word_reader.read_from_file(words_file_name)
+else
+  word = word_reader.read_from_args
+end
+
+game         = Game.new(word)
 game.version = VERSION
 
 printer = ResultPrinter.new(game)
