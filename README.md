@@ -5,6 +5,12 @@
 
 [Правила: Вики](https://ru.wikipedia.org/wiki/Виселица_(игра))
 ### Использование
+Для работы требуется *gem* *unicode_utils*
+
+Команда для установки `gem install unicode_utils`
+
+[страница gem'а](http://unicode-utils.rubyforge.org/)
+
 Для запуска используйте команду `ruby hangman.rb`
 
 Чтобы загадать свое слово, используйте его как параметр запуска `ruby hangman.rb YOUR_WORD`
