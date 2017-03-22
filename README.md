@@ -11,7 +11,7 @@
 
 [страница gem'а](http://unicode-utils.rubyforge.org/)
 
-Для запуска используйте команду `ruby hangman.rb`
+Для запуска программы используйте команду `ruby hangman.rb`
 
 Чтобы загадать свое слово, используйте его как параметр запуска `ruby hangman.rb YOUR_WORD`
 
